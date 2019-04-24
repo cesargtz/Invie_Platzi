@@ -1,0 +1,644 @@
+/* Resources */
+/* @font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?y8sp5k');
+  src:  url('../fonts/icomoon.eot?y8sp5k#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?y8sp5k') format('truetype'),
+    url('../fonts/icomoon.woff?y8sp5k') format('woff'),
+    url('../fonts/icomoon.svg?y8sp5k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+/* Resources */
+/** {
+  width: tamaño;
+  height: tamaño;
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 13px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding: 10px 13px 5px 15px;
+  margin: 10px;
+  margin-top: 10px;
+  margin-right: 13px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin: 10px 13px 5px 15px;
+  border: 2px solid red;
+}*/
+
+body {
+  font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background: lightgray;
+}
+
+.contenedor {
+  max-width: 800px;
+  widows: auto;
+  margin: auto;
+  position: relative;
+
+}
+
+.background {
+  background-image: url('../images/background.png');
+  background-size: cover;
+}
+
+.portada.background.is-animated {
+  background-image: url('../images/guitarrs.jpg');
+  background-repeat: no-repeat;
+  animation: background 15s linear infinite alternate;
+}
+
+@keyframes background {
+  0% {
+    background-size: 150%;
+    background-position: center;
+  }
+  20% {
+    background-position: right top;
+  }
+  40% {
+    background-size: 100%;
+    background-position: center;
+  }
+  60% {
+    background-position: left top;
+  }
+  80% {
+    background-position: left -100px;
+  }
+  100% {
+    background-size: 150%;
+    background-position: right bottom;
+  }
+}
+
+.button {
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: #fd324e;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+  /*background: rgb(243,197,189); /* Old browsers */
+  /* background: -moz-linear-gradient(top,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+  background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
+
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-top: 70px;
+  transition: 1s;
+}
+
+.titulo span {
+  text-decoration: underline;
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.guitarras {
+  color: #1F313C;
+  margin-bottom: 60px;
+  transition: 1s;
+}
+
+.guitarras h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+
+}
+
+
+
+.portada {
+
+  color: white;
+  padding: 20px;
+  height: 500px;
+}
+
+.portada button {
+  margin-bottom: 70px;
+}
+
+
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu li:before{
+  content: '∘';
+  font-size: 50px;
+  line-height: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.logotipo {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.b-lazy {
+   opacity:0;
+   transform: scale(3);
+   transition: all 500ms;
+}
+
+.guitarra {
+  margin: 10px 0px 40px;
+  padding: 10px 2em;
+  /*overflow: hidden;*/
+  border: 1px solid #1F313C;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  min-height: 250px;
+  transition: .3s;
+  position: relative;
+}
+.guitarra:hover {
+  /* box-shadow: x y % color */
+  box-shadow: 10px 10px 0 #ff3149;
+}
+/* .guitarra:nth-of-type(2)
+  ouedes usar odd para impares y even para pares */
+.guitarra:nth-of-type(even){
+  justify-content: flex-end;
+}
+.guitarra:nth-of-type(even):hover {
+  box-shadow: -10px 10px 0 black;
+}
+.guitarra:nth-of-type(even) .guitarra-image{
+  left: 0;
+  right: initial;
+}
+.guitarra-name{
+  font-size: 3em;
+  margin: 0 0 .2em;
+  border-bottom: 2px dashed #1e313d;
+  padding-bottom: .2em;
+}
+.guitarra-image{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.guitarra ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: features;
+  /*  quitamos el estilo de las viñetas
+  y agregamos un nuevo contador que reinicie todo y se le asinga un nombre*/
+}
+
+.guitarra li:before{
+ counter-increment: features;
+  content: counter(features) ". ";
+  /* por cada li que alla el contador se va ir incrementado
+  y al final solo le dices que lo muestre con la propiedad content */
+}
+
+.guitarras img:hover
+{
+    animation-name: guitarras-hover;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes guitarras-hover {
+  0%{
+      transform: scale(1) translateY(0);
+  }
+  100%{
+        transform: scale(1.1) translateY(-15px);
+  }
+}
+
+.header {
+  position: relative;
+}
+
+
+.footer {
+  background: #273b47;
+  padding: 50px 10px;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacto img {
+  display: block;
+  width: 300px;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+}
+
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button {
+  margin-top: 15px;
+}
+
+.intereses label {
+  font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+  margin-bottom: 10px;
+}
+
+
+.sexo {
+  margin-top: 10px;
+}
+.tabla {
+  margin: 50px 0;
+}
+.burger-button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  display: none;
+  text-align: center;
+  background: #395667;
+  position: fixed;
+  left: 20px;
+  top:20px;
+  cursor: pointer;
+  z-index: 3;
+  color: white;
+}
+
+.b-loaded {
+   opacity:1;
+   transform: scale(1);
+}
+.video-reponsive-contenedor{
+  position: relative;
+  /* ((315 * 100) / 560) */
+  padding-top: 56.4%;
+}
+.video-reponsive-src{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-demo-contenedor{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.video-demo {
+  /* el width toma el 100% de max-witdth */
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid #3c5b6e;
+}
+/* Media Querys  */
+@media screen and (max-width: 800px) {
+  /* Portada */
+  .titulo {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .title-a {
+    font-size: 18px;
+  }
+  .portada {
+    height: auto;
+  }
+  .portada .button {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  /* Portada
+
+  /* Guitarras */
+
+  .guitarras {
+    text-align: center;
+  }
+  .derecha, .izquierda{
+    float: none;
+    position: static;
+  }
+  .title-b {
+    margin: 0;
+  }
+  .guitarra li {
+    list-style: none;
+  }
+  .guitarra.b {
+    height: auto;
+  }
+  .contenedor-guitarra-b {
+    position: static;
+    margin: 0;
+  }
+  .contenedor-guitarra-a {
+    padding: 0;
+  }
+  .video-demo-contenedor{
+    margin-bottom: 30px;
+  }
+
+  /* Guitarras */
+
+  /* Precios  */
+  .tabla {
+    margin: 50px 20px;
+  }
+  .tabla .contenedor{
+    overflow: auto;
+    border: 1px solid #273b47;
+  }
+
+  /* Precios  */
+}
+/*  Tamaño menor a un ipad */
+@media screen and (max-width: 767px) {
+/* Footer */
+.footer .contenedor{
+  display: block;
+}
+.contacto{
+  margin: 0 auto;
+}
+.formulario {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+.intereses label {
+  display: block;
+  font-size: 16px;
+}
+input[type="text"],
+input[type="email"] {
+  font-size: 16px;
+  padding: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  zoom: 1.5px;
+}
+.col1{
+  margin: 0;
+}
+textarea{
+  /* el ancho total de su padre */
+  width: 100%;
+
+}
+/* Footer */
+}
+
+@media screen and (max-width: 650px) {
+  /* Portada */
+  .header{
+    text-align: center;
+  }
+  .menu {
+    position: static;
+    display: block;
+  }
+  .menu li:first-child {
+    margin: 0px;
+  }
+  .menu ul {
+    padding: 0;
+  }
+  .logotipo {
+    margin: 0;
+  }
+  /* guitarras */
+  .video-demo-contenedor{
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:500px) {
+  /* Portada */
+  .portada .button{
+    display: block;
+  }
+  .burger-button {
+    display: inline-block;
+  }
+  .header, .contenedor{
+    position: static;
+  }
+  .portada .contenedor {
+    position: static;
+  }
+  .menu {
+    background: rgba(255, 60, 88, .8);
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+  }
+  .menu.active {
+    left: 0;
+  }
+
+  .menu li {
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+  }
+  .menu li:first-child {
+    border-top: 1px solid white;
+  }
+  /* elimina las viñetas */
+  .menu li::before {
+    display: none;
+  }
+  .menu ul {
+    /* Toma el 100% del ancho */
+    flex: 1;
+  }
+  .portada {
+    text-align: center;
+  }
+  .titulo{
+    font-size: 30px
+  }
+  .title-a {
+    font-size: 16px;
+  }
+  .precios .header .logotipo{
+    margin: 50px 0;
+  }
+/* Portada */
+/* Guitarras */
+  .guitarras img{
+      width: 200px
+  }
+  .title-b {
+    font-size: 30px;
+  }
+  .contenedor-guitarra-a {
+    padding: 0;
+  }
+  .video-demo{
+     margin: 0 10px;
+  }
+/* Guitarras */
+/* Footer */
+  .col2{
+    align-items: stretch;
+  }
+
+/* Footer */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+  .background {
+    /* mientas carga image se pone el color de fondo */
+    background-color: #466173;
+    background-image: url('../images/background@2x.png');
+  }
+}
